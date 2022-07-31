@@ -18,7 +18,8 @@
             android:parentActivityName=".frontend.activities.HomeActivity"/>
         <activity
             android:name=".frontend.activities.SplashActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -17,7 +17,7 @@ android {
 
         buildConfigField ("String", 'URL', '\"https://api.themoviedb.org/3/\"')
         buildConfigField ("String", 'IMG_URL', '\"https://image.tmdb.org/t/p/w500\"')
-        buildConfigField ("String", 'API_KEY', 'KEY')
+        buildConfigField ("String", 'API_KEY', '\"KEY\"')
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true

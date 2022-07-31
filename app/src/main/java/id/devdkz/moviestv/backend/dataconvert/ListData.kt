@@ -5,7 +5,7 @@ import android.os.Looper
 import androidx.paging.PositionalDataSource
 import java.util.concurrent.Executor
 
-class ListData<T>(private val list : List<T>) : PositionalDataSource<T>()
+class ListData<T : Any>(private val list : List<T>) : PositionalDataSource<T>()
 {
     override fun loadInitial(params : LoadInitialParams, callback : LoadInitialCallback<T>) =
         callback.onResult(list, 0, list.size)

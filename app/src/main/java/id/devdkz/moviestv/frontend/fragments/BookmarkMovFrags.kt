@@ -57,10 +57,10 @@ class BookmarkMovFrags : Fragment(R.layout.fragment_main)
     }
 
     private fun observeData() =
-    vm.getListBookmark("movie").observe(viewLifecycleOwner, {
+    vm.getListBookmark("movie").observe(viewLifecycleOwner) {
         showLoading(false)
         initRV(it)
-    })
+    }
 
     private fun initRV(movieList : PagedList<MainData>)
     {

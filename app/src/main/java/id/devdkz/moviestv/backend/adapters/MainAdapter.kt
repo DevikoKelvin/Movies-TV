@@ -3,6 +3,7 @@ package id.devdkz.moviestv.backend.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.paging.PagedListAdapter
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -12,7 +13,7 @@ import id.devdkz.moviestv.R
 import id.devdkz.moviestv.backend.data.MainData
 import id.devdkz.moviestv.databinding.ListViewBinding
 
-class MainAdapter : PagingDataAdapter<MainData, MainAdapter.RecyclerViewHolder>(diffCallback)
+class MainAdapter : PagedListAdapter<MainData, MainAdapter.RecyclerViewHolder>(diffCallback)
 {
     private lateinit var onItemClickCallback: OnItemClickCallback
 
